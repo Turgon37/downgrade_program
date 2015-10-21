@@ -72,7 +72,7 @@ ping ping6 traceroute
 # VM STAT
 docker
 machinectl
-qemu-img qemu-io qemu-make-debian-root qemu-nbd qemu-system-i386 qemu-system-x86_64
+#qemu-img qemu-io qemu-make-debian-root qemu-nbd qemu-system-i386 qemu-system-x86_64
 virsh virt-convert virt-host-validate virt-install virt-login-shell
 virt-sanlock-cleanup virt-xml-validate virt-clone virtfs-proxy-helper
 virt-image virtlockd virt-pki-validate virt-xml 
