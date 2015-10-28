@@ -2,8 +2,13 @@
 # one or more program per line (space separated)
 # A line which start by # is considered as a comment
 
+CONFIG="
+list:only_root         user:root group:root    o=---
+list:restrict_admin              group:admin   o=---
+"
 
-DOWNGRADE_USER_root="
+
+only_root="
 apt apt-cdrom apt-extracttemplates apt-get apt-mark apt-cache apt-config
 apt-ftparchive apt-key apt-sortpkgs
 dmidecode
@@ -23,7 +28,7 @@ fdisk cfdisk sfdisk
 "
 
 
-DOWNGRADE_GRP_admin="
+restrict_admin="
 # USER
 last lastb lastlog faillog
 
