@@ -25,6 +25,8 @@ smartd
 
 chcpu
 fdisk cfdisk sfdisk
+
+killall
 "
 
 
@@ -57,8 +59,8 @@ timedatectl
 arch
 lscpu lshw lsusb lspci
 lsmod lsinitramfs
-lslocks lsof 
-top ps
+lslocks lsof peekfd fuser
+top ps pstree prtstat
 wdctl
 
 # NETSTAT
